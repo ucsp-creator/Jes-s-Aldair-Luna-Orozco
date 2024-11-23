@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Presentación</title>
+  <style>
+    body {
+      background: #f0f4f8;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+      animation: fadeIn 1.5s ease-out;
+    }
+
+    h1, h2 {
+      color: #333;
+      margin-bottom: 10px;
+      opacity: 0;
+      animation: slideInFromTop 1s ease-out forwards;
+    }
+
+    h1 {
+      animation-delay: 0.2s;
+    }
+
+    h2 {
+      animation-delay: 0.4s;
+    }
+
+    p, ul {
+      color: #555;
+      font-size: 1rem;
+      line-height: 1.5;
+      opacity: 0;
+      animation: fadeIn 1s ease-out forwards;
+      animation-delay: 0.6s;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    a {
+      color: #007BFF;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #0056b3;
+    }
+
+    .social-section {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-top: 20px;
+      opacity: 0;
+      animation: fadeIn 1.2s ease-out forwards;
+      animation-delay: 0.8s;
+    }
+
+    .social-section img {
+      border-radius: 50%;
+      width: 110px;
+      height: 150px;
+      margin-right: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .social-section img:hover {
+      transform: scale(1.1);
+    }
+
+    .social-section ul {
+      text-align: left;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      opacity: 0;
+      animation: fadeIn 1s ease-out forwards;
+      animation-delay: 0.6s;
+    }
+
+    ul div {
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    ul div:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideInFromTop {
+      from {
+        transform: translateY(-50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Jesús Aldair Luna Orozco</h1>
+    <p>¡Bienvenidos! Soy un alumno de Ing. Industrial y esta página ha sido creada como parte de la presentación de la tarea para el curso "Introducción a la Ciencia de la Computación." Mi código de alumno es 241-05-63772.</p><br>
+    <img src="assets/ucsp.jpg" height="500" width="800" alt="Universidad Católica San Pablo">
+
+    <h2>Redes Sociales</h2>
+    <div class="social-section">
+      <img src="assets/pfp.jpeg" alt="Foto de Perfil">
+      <ul>
+        <li><a href="https://www.facebook.com/AldairLunaO?mibextid=LQQJ4d">Facebook</a></li>
+        <li><a href="http://www.linkedin.com/in/kevinloayzabarreda">LinkedIn</a></li>
+        <li><a href="https://www.instagram.com/aldairluna1_xx/profilecard/?igsh=dGtuaDRjNGhnajhr">Instagram</a></li>
+      </ul>
+    </div>
+
+    <h2>Compañeros de Curso</h2>
+    <p>Aqui compañeros de curso con sus respectivos links</p>
+    <ul>
+        <div>
+            <h3><a href="https://jasmin666401.github.io/Jasmin.github-io/"> López Gomez Dhafne Jasmin</a></h3>
+            <p>Alumna de Ingenieria Industrial y cursante de Introducción a Ciencia de la Computación</p>
+        </div>
+        <div>
+            <h3><a href="https://paolojoaquingomezmanrique.github.io/ICC/"> Paolo Gómez Manrique</a></h3>
+            <p>Alumno de Ciencia de la Computación y cursante de Introducción a Ciencia de la Computación</p>
+        </div>
+    </ul>
+  </div>
+
+</body>
+</html>
